@@ -3,6 +3,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap');
 
 .body{
+    box-sizing: border-box;
   margin: 0;
   padding: 0; 
   /*pour effacer la partie blanche dans qui apparaisse just en dessous de la navbar*/
@@ -43,18 +44,27 @@
   color: #875a28;
 }
 .home{
-  
   background: url("resources/background4.webp")no-repeat left center/cover;
-  background-position: 20vw;
+  background-position-x: 40vw;
+  background-size: auto;
+  /*pour décaler le background pour une position idéale*/
   padding: 1%;
   height: 100vh;
 }
+.home h3{
+background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+color: white;
+text-align: center;}
+
 .home-container {
-  padding: 10% 20%;
+  padding-left: 7%;
+  padding-right: 50%;
+  padding-top: 7%;
   height: 95vh;
   box-sizing: border-box; 
  /* background: linear-gradient(-60deg, #2c2c2a 5%, #ddab46 35%);*/
-  background-color: #0000007b;
+  background-color: #00000092;
   display: flex;
   text-align: left;
   align-items: left;
@@ -63,18 +73,18 @@
 }
 /******************************************************/
  .aboutme{
-  background-color: #875a28;
-  /*background: url("resources/background1.jpg")no-repeat center center/cover;*/
-  padding: 1%;
+  /*background-color: #875a28;*/
+  background: url("resources/background25.jpg")no-repeat center center/cover;
+  padding: 3%;
   height: 100vh;
 }
 .About{
   box-sizing: border-box; 
-  background-color: #0c0b0b;
+  background-color: #0c0b0bd6;
   color: white;
   width: 100%;
   height: 100vh;
-  padding: 0.1%;
+  padding: 4%;
   text-align: center;
   vertical-align: auto;
  
@@ -118,35 +128,20 @@
 }
 /******************************************************/
 
-.resumepage{
-  background-color: #875a28;
-  background: url("resources/background4.webp")no-repeat center center/cover;
-  padding: 1%;
-  height: 100vh;
-}
-
-.resume{
-  box-sizing: border-box; 
-  background-color: #0c0b0b;
-  color: white;
-  width: 100%;
-  height: 100vh;
-  padding: 3%;
-  text-align: center;
-  vertical-align: bottom;
- 
-}
 
 
 
-/**/
+/***********************************************************************/
 .contactus{
-  background: #1b1b1be1;
+  background: #474545e1;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("resources/background5.avif") no-repeat center center/cover;
+  background: url("resources/vector-OCT-2020-118_generated.jpg") no-repeat center center/cover;
+  background-position-x: center;
+  
+  
 }
 .contactus form{
   width: 700px;
@@ -155,7 +150,7 @@
   justify-content: center;
   box-shadow: 20px 20px 50px rgba(0,0,0,5);
   border-radius: 15px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(10px);
   flex-wrap: wrap;
 }
